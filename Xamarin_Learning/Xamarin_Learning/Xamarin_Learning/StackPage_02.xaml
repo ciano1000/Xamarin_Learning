@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Learning.StackPage_02">
+    <StackLayout>
+        <StackLayout Padding="10">
+            <Label Text="nyc_photographer" TextColor="Black"/>
+        </StackLayout>
+
+        <Image Source="http://wallpoper.com/images/00/44/98/44/landscape-in-argentina_00449844.jpg"/>
+        <StackLayout Spacing ="20" Padding="10,0" Orientation="Horizontal">
+            <Button Text="Like" BackgroundColor="White" BorderColor="White" TextColor="#1dabf0"/>
+            <Button Text="Comment" BackgroundColor="White" BorderColor="White" TextColor="#1dabf0"/>
+            <Button Text="Share" BackgroundColor="White" BorderColor="White" TextColor="#1dabf0"/>
+        </StackLayout>
+        <StackLayout Padding="10">
+            <BoxView Color="#f0f0f0" HeightRequest="1"></BoxView>
+            <Label Text="700 likes" Font="Bold,14"/>
+            <Label Text="Check out this cool picture I took yesterday"/>
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>
