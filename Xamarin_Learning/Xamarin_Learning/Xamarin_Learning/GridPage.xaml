@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             Padding="0,20,0,0"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Learning.GridPage">
+    <Grid BackgroundColor="Yellow"
+          RowSpacing="40"
+          ColumnSpacing="40">
+<!--Property element syntax-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/> <!--first row definition -->
+            <RowDefinition Height="2*"/> <!--second... remaining space will be divided such that 2nd row is twice height of third-->
+            <RowDefinition Height="*"/> <!--third...-->
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/><!--Same as above except for columns,
+            "auto" means the column will be wide enough to fit all its children-->
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" Text="Label 1" BackgroundColor="Silver"/>
+        <Label Grid.Row ="0" Grid.Column="1" Text="Label 2" BackgroundColor="Silver"/>
+        <Label Grid.Row ="1" Grid.Column="0" Text="Label 3" BackgroundColor="Silver"/>
+        <Label Grid.Row ="1" Grid.Column="1" Text="Label 4" BackgroundColor="Silver"/>
+        <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Column Span" BackgroundColor="Silver"/>
+        <Label Grid.Column="3" Grid.RowSpan="3" Text="RowSpan" BackgroundColor="Silver"/>
+    </Grid>
+</ContentPage>
