@@ -11,7 +11,7 @@ namespace Xamarin_Learning
 		{
 			InitializeComponent();
 
-            MainPage = new GridExercise_02();
+            MainPage = new AbsoluteExercise_01();
 		}
 
 		protected override void OnStart ()
