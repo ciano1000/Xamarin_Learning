@@ -11,7 +11,7 @@ namespace Xamarin_Learning
 		{
 			InitializeComponent();
 
-            MainPage = new AbsoluteExercise_02();
+            MainPage = new RelativeLayout();
 		}
 
 		protected override void OnStart ()
