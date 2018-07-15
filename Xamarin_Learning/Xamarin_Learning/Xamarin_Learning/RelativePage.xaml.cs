@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Xamarin_Learning
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class RelativeLayout : ContentPage
+	public partial class RelativePage : ContentPage
 	{
-		public RelativeLayout ()
+		public RelativePage ()
 		{
 			InitializeComponent ();
 
