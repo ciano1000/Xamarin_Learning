@@ -11,7 +11,7 @@ namespace Xamarin_Learning
 		{
 			InitializeComponent();
 
-            MainPage = new RelativeExercise_01();
+            MainPage = new ImagePage_02();
 		}
 
 		protected override void OnStart ()
