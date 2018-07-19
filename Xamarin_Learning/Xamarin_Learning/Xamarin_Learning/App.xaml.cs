@@ -11,7 +11,7 @@ namespace Xamarin_Learning
 		{
 			InitializeComponent();
 
-            MainPage = new ImagePage_03();
+            MainPage = new ImagePage_04();
 		}
 
 		protected override void OnStart ()
