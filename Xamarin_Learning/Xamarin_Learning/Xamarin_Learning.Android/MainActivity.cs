@@ -7,6 +7,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+using ImageCircle.Forms.Plugin.Droid;
+
 namespace Xamarin_Learning.Droid
 {
     [Activity(Label = "Xamarin_Learning", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -20,6 +22,7 @@ namespace Xamarin_Learning.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            ImageCircleRenderer.Init();
             LoadApplication(new App());
         }
     }
