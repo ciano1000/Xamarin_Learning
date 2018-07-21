@@ -11,7 +11,7 @@ namespace Xamarin_Learning
 		{
 			InitializeComponent();
 
-            MainPage = new ImageCircle();
+            MainPage = new ImageExercise();
 		}
 
 		protected override void OnStart ()
