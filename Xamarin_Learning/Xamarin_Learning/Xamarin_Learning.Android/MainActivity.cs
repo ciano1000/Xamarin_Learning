@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 
 using ImageCircle.Forms.Plugin.Droid;
+using ButtonCircle.FormsPlugin.Droid;
 
 namespace Xamarin_Learning.Droid
 {
@@ -23,6 +24,7 @@ namespace Xamarin_Learning.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             ImageCircleRenderer.Init();
+            ButtonCircleRenderer.Init();
             LoadApplication(new App());
         }
     }

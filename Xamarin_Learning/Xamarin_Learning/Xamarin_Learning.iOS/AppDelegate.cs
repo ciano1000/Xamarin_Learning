@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using ImageCircle.Forms.Plugin.iOS;
+using ButtonCircle.FormsPlugin.iOS;
 
 namespace Xamarin_Learning.iOS
 {
@@ -25,6 +26,7 @@ namespace Xamarin_Learning.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             ImageCircleRenderer.Init();
+            ButtonCircleRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

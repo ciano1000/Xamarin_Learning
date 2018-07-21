@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 using ImageCircle.Forms.Plugin.UWP;
+using ButtonCircle.FormsPlugin.UWP;
 
 namespace Xamarin_Learning.UWP
 {
@@ -56,6 +57,8 @@ namespace Xamarin_Learning.UWP
 
                 Xamarin.Forms.Forms.Init(e);
                 ImageCircleRenderer.Init();
+                ButtonCircleRenderer.Init();
+
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
