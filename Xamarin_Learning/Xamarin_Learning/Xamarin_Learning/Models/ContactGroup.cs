@@ -10,6 +10,11 @@ namespace Xamarin_Learning.Models
         public string Title { get; set; }
         public string ShortTitle { get; set; }
 
+        public ContactGroup()
+        {
+
+        }
+
         public ContactGroup(string title, string shortTitle)
         {
             Title = title;

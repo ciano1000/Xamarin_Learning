@@ -19,19 +19,7 @@ namespace Xamarin_Learning
 		{
 			InitializeComponent ();
 
-            _contacts = new ObservableCollection<ContactGroup>
-            {
-                new ContactGroup("C", "C")
-                {
-                     new Contact {Name = "Cian",ImageUrl ="http://lorempixel.com/100/100/people/1"}
-                },
-                new ContactGroup("G", "G")
-                {
-                    new Contact {Name = "Gearóid",ImageUrl ="http://lorempixel.com/100/100/people/2",Status = "Hey lets talk!"}
-                }
-                
-
-            };
+            _contacts = GetContacts();
             listView.ItemsSource = _contacts;
 		}
 
@@ -65,6 +53,73 @@ namespace Xamarin_Learning
 
             contactGroup.Remove(contact);
             DisplayAlert("Deleted",contactGroup.Title , "ok");
+        }
+
+        private void listView_Refreshing(object sender, EventArgs e)
+        {
+            _contacts = GetContacts();
+            listView.ItemsSource = _contacts;
+            listView.EndRefresh();
+        }
+
+        ObservableCollection<ContactGroup> GetContacts(string searchText = null)
+        {
+          var contactGroup =  new ObservableCollection<ContactGroup>
+            {
+                new ContactGroup("C", "C")
+                {
+                     new Contact {Name = "Cian",ImageUrl ="http://lorempixel.com/100/100/people/1"}
+                },
+                new ContactGroup("G", "G")
+                {
+                    new Contact {Name = "Gearóid",ImageUrl ="http://lorempixel.com/100/100/people/2",Status = "Hey lets talk!"}
+                }
+            };
+            
+            if(String.IsNullOrWhiteSpace(searchText))
+            {
+                return contactGroup;
+            }
+            else
+            {
+                ContactGroup searchGroup = new ContactGroup();
+                
+                foreach(ContactGroup group in contactGroup.ToList())
+                {
+                    if(group.Title != searchText.Substring(0, 1))
+                    {
+                        contactGroup.Remove(group);
+                    }
+                    else
+                    {
+                        searchGroup = group;
+                    }
+                }
+
+                foreach(Contact contact in searchGroup.ToList())
+                {
+                    if(!contact.Name.StartsWith(searchText))
+                    {
+                        searchGroup.Remove(contact);
+                    }
+                }
+
+                return contactGroup;
+            }
+        }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(e.NewTextValue != string.Empty)
+            {
+                _contacts = GetContacts(e.NewTextValue);
+                listView.ItemsSource = _contacts;
+            }
+            else
+            {
+                _contacts = GetContacts();
+                listView.ItemsSource = _contacts;
+            }
         }
     }
 }
