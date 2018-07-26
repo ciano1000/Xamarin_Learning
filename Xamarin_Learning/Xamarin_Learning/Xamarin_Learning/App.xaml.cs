@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin_Learning.Exercises.Lists;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace Xamarin_Learning
@@ -11,7 +12,7 @@ namespace Xamarin_Learning
 		{
 			InitializeComponent();
 
-            MainPage = new ListPage_01();
+            MainPage = new ListExercisePage();
 		}
 
 		protected override void OnStart ()

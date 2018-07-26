@@ -14,11 +14,11 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteExercise_01.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Absolute\AbsoluteExercise_01.xaml.cs">
       <DependentUpon>AbsoluteExercise_01.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteExercise_02.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Absolute\AbsoluteExercise_02.xaml.cs">
       <DependentUpon>AbsoluteExercise_02.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -29,18 +29,25 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Exercise.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Exercise.xaml.cs">
       <DependentUpon>Exercise.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)GridExercise_01.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Grid\GridExercise_01.xaml.cs">
       <DependentUpon>GridExercise_01.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)GridExercise_02.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Grid\GridExercise_02.xaml.cs">
       <DependentUpon>GridExercise_02.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Lists\ListExercisePage.xaml.cs">
+      <DependentUpon>ListExercisePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Lists\Search.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Lists\SearchGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Lists\SearchService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GridPage.xaml.cs">
       <DependentUpon>GridPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -49,7 +56,7 @@
       <DependentUpon>ImageCircle.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ImageExercise.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Image\ImageExercise.xaml.cs">
       <DependentUpon>ImageExercise.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -79,7 +86,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MarkupExtensions\EmbeddedImage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ContactGroup.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)RelativeExercise_01.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Exercises\Relative\RelativeExercise_01.xaml.cs">
       <DependentUpon>RelativeExercise_01.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -97,7 +104,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercise.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Exercise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -121,13 +128,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)GridExercise_01.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Grid\GridExercise_01.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)GridExercise_02.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Grid\GridExercise_02.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -139,13 +146,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteExercise_01.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Absolute\AbsoluteExercise_01.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteExercise_02.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Absolute\AbsoluteExercise_02.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -157,7 +164,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)RelativeExercise_01.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Relative\RelativeExercise_01.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -193,13 +200,25 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImageExercise.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Image\ImageExercise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ListPage_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Exercises\Absolute\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Exercises\Grid\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Exercises\Image\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Exercises\Relative\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Lists\ListExercisePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
