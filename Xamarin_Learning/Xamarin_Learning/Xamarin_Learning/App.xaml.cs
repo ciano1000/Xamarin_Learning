@@ -2,6 +2,7 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin_Learning.Exercises.Lists;
+using Xamarin_Learning.Navigation;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace Xamarin_Learning
@@ -12,7 +13,11 @@ namespace Xamarin_Learning
 		{
 			InitializeComponent();
 
-            MainPage = new ListExercisePage();
+            /* MainPage = new NavigationPage(new WelcomePage_01()) { BarBackgroundColor = Color.Gray,
+             BarTextColor = Color.White};*/
+
+            MainPage = new NavigationPage(new ContactsPage());
+            
 		}
 
 		protected override void OnStart ()
