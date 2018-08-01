@@ -16,7 +16,8 @@ namespace Xamarin_Learning
             /* MainPage = new NavigationPage(new WelcomePage_01()) { BarBackgroundColor = Color.Gray,
              BarTextColor = Color.White};*/
 
-            MainPage = new NavigationPage(new ContactsPage());
+            //MainPage = new NavigationPage(new ContactsPage()); for Master Detail Pages
+            MainPage = new TabbedPagesMain();
             
 		}
 
