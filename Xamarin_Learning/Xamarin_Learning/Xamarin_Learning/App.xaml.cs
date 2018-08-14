@@ -3,7 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin_Learning.Exercises.Lists;
 using Xamarin_Learning.Navigation;
-
+using Xamarin_Learning.NavigationExercise;
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace Xamarin_Learning
 {
@@ -17,7 +17,12 @@ namespace Xamarin_Learning
              BarTextColor = Color.White};*/
 
             //MainPage = new NavigationPage(new ContactsPage()); for Master Detail Pages
-            MainPage = new TabbedPagesMain();
+            // MainPage = new TabbedPagesMain();
+            //MainPage = new CarouselPage_01();
+            // MainPage = new NavigationPage(new ToolbarItems());
+            NavigationPage navPage = new NavigationPage(new InstaPage());
+
+            MainPage = navPage;
             
 		}
 
