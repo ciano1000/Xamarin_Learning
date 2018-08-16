@@ -19,9 +19,7 @@ namespace Xamarin_Learning.NavigationExercise
             UserService userService = new UserService();
             var user = userService.GetUser(id);
 
-            Name.Text = user.Name;
-            image.Source = user.ImageUrl;
-            description.Text = user.Description;
+            BindingContext = user;
         }
 	}
 }

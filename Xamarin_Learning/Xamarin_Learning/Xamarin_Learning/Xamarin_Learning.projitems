@@ -22,7 +22,7 @@
       <DependentUpon>AbsoluteExercise_02.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AbsolutePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\AbsolutePage.xaml.cs">
       <DependentUpon>AbsolutePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -48,11 +48,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Exercises\Lists\Search.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Exercises\Lists\SearchGroup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Exercises\Lists\SearchService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GridPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\GridPage.xaml.cs">
       <DependentUpon>GridPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ImageCircle.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ImageTutorials\ImageCircle.xaml.cs">
       <DependentUpon>ImageCircle.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -60,23 +60,23 @@
       <DependentUpon>ImageExercise.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ImagePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ImageTutorials\ImagePage.xaml.cs">
       <DependentUpon>ImagePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ImagePage_02.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ImageTutorials\ImagePage_02.xaml.cs">
       <DependentUpon>ImagePage_02.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ImagePage_03.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ImageTutorials\ImagePage_03.xaml.cs">
       <DependentUpon>ImagePage_03.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ImagePage_04.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ImageTutorials\ImagePage_04.xaml.cs">
       <DependentUpon>ImagePage_04.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ListPage_01.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\ListPage_01.xaml.cs">
       <DependentUpon>ListPage_01.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -142,15 +142,15 @@
       <DependentUpon>WelcomePage_01.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)RelativePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\RelativePage.xaml.cs">
       <DependentUpon>RelativePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)StackPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)StackPage_02.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\StackPage_02.xaml.cs">
       <DependentUpon>StackPage_02.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -162,19 +162,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)StackPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\StackPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)StackPage_02.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\StackPage_02.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)GridPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\GridPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -192,7 +192,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsolutePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\AbsolutePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -210,7 +210,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)RelativePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\RelativePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -222,31 +222,31 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImagePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImageTutorials\ImagePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImagePage_02.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImageTutorials\ImagePage_02.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImagePage_03.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImageTutorials\ImagePage_03.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImagePage_04.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImageTutorials\ImagePage_04.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImageCircle.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImageTutorials\ImageCircle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -258,7 +258,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ListPage_01.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\ListPage_01.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -268,6 +268,8 @@
     <Folder Include="$(MSBuildThisFileDirectory)Exercises\Grid\" />
     <Folder Include="$(MSBuildThisFileDirectory)Exercises\Image\" />
     <Folder Include="$(MSBuildThisFileDirectory)Exercises\Relative\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Layouts\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ImageTutorials\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Exercises\Lists\ListExercisePage.xaml">

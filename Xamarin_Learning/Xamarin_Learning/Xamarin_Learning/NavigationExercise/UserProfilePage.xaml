@@ -6,11 +6,11 @@
              Title="{Binding Name}"
              Padding="20">
     <StackLayout>
-    <Label x:Name="Name" Text="" FontAttributes ="Bold" TextColor="Black"/>
-    <ic:CircleImage x:Name="image" Source=""
+    <Label  Text="{Binding Name}" FontAttributes ="Bold" TextColor="Black"/>
+        <ic:CircleImage Source="{Binding ImageUrl}"
                     WidthRequest="50"
                     HeightRequest="50"
                     Aspect="AspectFill"/>
-        <Label x:Name ="description" Text="" TextColor="LightGray"/>
+        <Label Text="{Binding Description}" TextColor="LightGray"/>
     </StackLayout>
 </ContentPage>
