@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Learning.FormsAndSettings.EntryAndEditor"
+             Padding="40">
+   <!-- <StackLayout>
+        <Entry Keyboard="Numeric" Placeholder="Phone"/>
+        <Entry IsPassword="True" Completed="Entry_Completed"/>
+        <Label x:Name="label"/>
+    </StackLayout>-->
+    <Editor/>
+</ContentPage>

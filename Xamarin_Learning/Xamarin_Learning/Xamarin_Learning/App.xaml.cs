@@ -4,6 +4,7 @@ using Xamarin.Forms.Xaml;
 using Xamarin_Learning.Exercises.Lists;
 using Xamarin_Learning.Navigation;
 using Xamarin_Learning.NavigationExercise;
+using Xamarin_Learning.FormsAndSettings;
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace Xamarin_Learning
 {
@@ -20,9 +21,9 @@ namespace Xamarin_Learning
             // MainPage = new TabbedPagesMain();
             //MainPage = new CarouselPage_01();
             // MainPage = new NavigationPage(new ToolbarItems());
-            NavigationPage navPage = new NavigationPage(new InstaPage());
+            // NavigationPage navPage = new NavigationPage(new InstaPage());
 
-            MainPage = navPage;
+            MainPage = new TableViewPage();
             
 		}
 
