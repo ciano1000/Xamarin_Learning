@@ -10,16 +10,20 @@ using Xamarin.Forms.Xaml;
 namespace Xamarin_Learning.FormsAndSettings
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EntryAndEditor : ContentPage
+	public partial class Picker_PickerWithNav : ContentPage
 	{
-		public EntryAndEditor ()
+		public Picker_PickerWithNav ()
 		{
 			InitializeComponent ();
+
+            listView.ItemsSource = new List<string>
+            {
+                "None","Email","SMS"
+            };
+
 		}
 
-     /*   private void Entry_Completed(object sender, EventArgs e)
-        {
-            label.Text = "Completed";
-        }*/
-    }
+        public ListView ContactMethods { get { return listView; } }
+
+	}
 }

@@ -23,7 +23,8 @@ namespace Xamarin_Learning
             // MainPage = new NavigationPage(new ToolbarItems());
             // NavigationPage navPage = new NavigationPage(new InstaPage());
 
-            MainPage = new TableViewPage();
+            //MainPage = new TableViewPage();
+            MainPage = new NavigationPage(new Main_PickerWithNav());
             
 		}
 
