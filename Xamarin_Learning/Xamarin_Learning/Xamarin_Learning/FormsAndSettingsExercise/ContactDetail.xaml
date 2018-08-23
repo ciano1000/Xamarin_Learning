@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Learning.FormsAndSettingsExercise.ContactDetail">
+    <TableView Intent="Form">
+        <TableView.Root>
+            <TableRoot>
+                <TableSection Title="Name">
+                    <EntryCell x:Name="firstName" Label="First Name" Text="{Binding FirstName}"/>
+                    <EntryCell x:Name="lastName" Label="Last Name" Text="{Binding LastName}"/>
+                </TableSection>
+                <TableSection Title="Contact">
+                    <EntryCell x:Name="phone" Label="Phone" Keyboard="Telephone" Text="{Binding Phone}"/>
+                    <EntryCell x:Name ="email" Label="Email" Keyboard="Email" Text="{Binding Email}"/>
+                </TableSection>
+                <TableSection Title="Other">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="13,0">
+                            <Label Text="Blocked" VerticalOptions="Center"/>
+                            <Switch x:Name="blocked" HorizontalOptions="EndAndExpand" IsToggled="{Binding Blocked}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout>
+                            <Button Text="Save" FontSize="15" BackgroundColor="#1695A3" TextColor="White" Clicked="Handle_Saved"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView.Root>
+    </TableView>
+
+
+</ContentPage>

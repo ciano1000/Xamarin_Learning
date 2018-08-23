@@ -14,6 +14,10 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\ApplicationProperties.xaml.cs">
+      <DependentUpon>ApplicationProperties.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Exercises\Absolute\AbsoluteExercise_01.xaml.cs">
       <DependentUpon>AbsoluteExercise_01.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -26,6 +30,16 @@
       <DependentUpon>DateCell.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)FormsAndSettingsExercise\Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FormsAndSettingsExercise\ContactBook.xaml.cs">
+      <DependentUpon>ContactBook.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)FormsAndSettingsExercise\ContactDetail.xaml.cs">
+      <DependentUpon>ContactDetail.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)FormsAndSettingsExercise\ContactService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FormsAndSettings\DateTimePage.xaml.cs">
       <DependentUpon>DateTimePage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -445,6 +459,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)FormsAndSettings\Picker_PickerWithNav.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FormsAndSettingsExercise\ContactBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FormsAndSettingsExercise\ContactDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)DataAccess\ApplicationProperties.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

@@ -5,12 +5,16 @@ using Xamarin_Learning.Exercises.Lists;
 using Xamarin_Learning.Navigation;
 using Xamarin_Learning.NavigationExercise;
 using Xamarin_Learning.FormsAndSettings;
+using Xamarin_Learning.FormsAndSettingsExercise;
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace Xamarin_Learning
 {
 	public partial class App : Application
 	{
-		public App ()
+
+        private const string TitleKey = "FName";
+        private const string NotificationKey = "NotificationsEnabled";
+        public App ()
 		{
 			InitializeComponent();
 
@@ -24,8 +28,9 @@ namespace Xamarin_Learning
             // NavigationPage navPage = new NavigationPage(new InstaPage());
 
             //MainPage = new TableViewPage();
-            MainPage = new NavigationPage(new Main_PickerWithNav());
-            
+            //  MainPage = new NavigationPage(new Main_PickerWithNav());
+            //    MainPage =new NavigationPage(new ContactBook());
+            MainPage = new NavigationPage(new ContactBook()); 
 		}
 
 		protected override void OnStart ()
@@ -42,5 +47,34 @@ namespace Xamarin_Learning
 		{
 			// Handle when your app resumes
 		}
+
+        public string Title {
+            get
+            {
+                if (Properties.ContainsKey(TitleKey))
+                    return Properties[TitleKey].ToString();
+
+                return "";
+            }
+            set
+            {
+                Properties[TitleKey] = value;
+            }
+        }
+
+        public bool NotificationsEnabled
+        {
+            get
+            {
+                if (Properties.ContainsKey(NotificationKey))
+                    return (bool)Properties[NotificationKey];
+
+                return false;
+            }
+            set
+            {
+                Properties[NotificationKey] = value;
+            }
+        }
 	}
 }
